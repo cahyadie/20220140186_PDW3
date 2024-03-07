@@ -1,4 +1,4 @@
-*body {
+*{
     padding: 0%;
     margin: 0%;
     text-align: center;
@@ -30,25 +30,27 @@ body {
 .card img {
     padding-top: 60px;
     padding-bottom:20px;
-    width: 500px;
+    width: 360px;
     display: flex;
     margin: auto;
     transition: transform 0.3s ease;
     filter: drop-shadow(15px 5px 5px rgb(40, 179, 218));
 }
 
-.text{
-    font-family: "Philosopher", sans-serif;
-    color: #ffff;
-    line-height: 1;
-    padding: 0 20px;
+.card text{
+   
+    
     font-style: normal;
     font-weight: 400;
+    font-size: 24px;
+    text-align: center; 
 }
 
 .text p{
-    font-size: 24px;
-    text-align: center;   
+    color: #ffff;   
+    font-family: "Philosopher", sans-serif;
+    line-height: 1;
+    padding: 0 20px;
 }
 
 
@@ -91,7 +93,7 @@ nav ul li:hover{
 nav ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 24px;
+    font-size: 16px;
 }
 
 
@@ -99,8 +101,8 @@ nav ul li a{
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 67%;
+    min-height: 67%;
     z-index: -1;
 }
 

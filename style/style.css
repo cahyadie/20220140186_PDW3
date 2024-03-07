@@ -1,0 +1,114 @@
+
+
+
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+
+.card {
+    backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.31);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    width: 40%;
+    height: 70%;
+}
+
+.card img {
+    padding-top: 60px;
+    padding-bottom:20px;
+    width: 500px;
+    display: flex;
+    margin: auto;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(15px 5px 5px rgb(40, 179, 218));
+}
+
+.text{
+    font-family: "Philosopher", sans-serif;
+    color: #ffff;
+    line-height: 1;
+    padding: 0 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text p{
+    font-size: 24px;
+    text-align: center;   
+}
+
+
+.card img:hover{
+    transform: scale(1.2);
+}
+
+.text2 {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    padding: 10px; 
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px; 
+    color: floralwhite;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    transition: transform 0.3s;
+}
+
+nav ul li:hover{
+    transform: scale(1.2);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+
+#video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+} 
+    

@@ -74,7 +74,7 @@ nav{
     top: 0;
     left: 0;
     padding: 20px 8%;
-    display: flex;
+
     align-items: center;
     justify-content: space-between;
 }
@@ -120,3 +120,83 @@ nav ul li a{
     }
 } 
     
+#dateContainer {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    color: white; 
+    font-family: 'Philosopher', sans-serif; 
+    font-size: 16px; 
+}
+
+/* CSS untuk elemen login */
+.login-container {
+    display: none;
+    position: absolute;
+    top: 100%; /* Menempatkan elemen login di bawah tautan "Login" */
+    left: 0;
+    margin-left: auto; /* Mengatur elemen login ke tengah */
+    margin-right: auto; /* Mengatur elemen login ke tengah */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px; /* Menambahkan padding agar elemen login lebih besar */
+    border-radius: 5px; 
+    z-index: 999; /* Pastikan elemen login berada di atas elemen lain */
+    width: 200px; /* Lebar elemen login */
+    text-align: center;
+    
+}
+
+/* CSS untuk menampilkan elemen login saat tautan "Login" dihover */
+nav ul li:nth-child(3):hover .login-container {
+    display: block;
+    margin-bottom: 30px;
+}
+
+/* CSS untuk membuat tampilan login yang lebih baik */
+.login-container input,
+.login-container button {
+    display: block;
+    margin-bottom: 30px; /* Menambahkan margin antara input dan tombol */
+}
+
+.login-container button {
+    width: 50%; /* Lebar tombol */
+    padding: 5px; /* Padding tombol */
+    font-size: 10px; /* Ukuran font tombol */
+    
+}
+
+.login-container button {
+    width: 50%; /* Lebar tombol */
+    padding: 5px; /* Padding tombol */
+    font-size: 10px; /* Ukuran font tombol */
+    margin: 0 auto; /* Menempatkan tombol di tengah */
+}
+
+/* CSS untuk elemen input */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+/* CSS untuk memberi efek hover pada input */
+.login-container input[type="text"]:hover,
+.login-container input[type="password"]:hover {
+    border-color: #333;
+}
+
+/* CSS untuk memberi efek focus pada input */
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    outline: none;
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+

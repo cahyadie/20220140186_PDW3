@@ -40,10 +40,26 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">Login</a>
+                <!-- Elemen login yang akan ditampilkan saat tautan "Login" dihover -->
+                <div class="login-container">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button type="button" onclick="submit()">Login</button>
+                </div>
+            </li>
         </ul>
     </nav>
     </div>
+    
+    <!-- Div untuk class datenya -->
+    <div id="dateContainer"></div>
+<!-- untuk memanggil javascriptnya -->
+    <script src="./script/main.js"></script>
+    <!-- code untuk alertnya -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
 
 </body>
 
